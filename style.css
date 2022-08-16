@@ -1,0 +1,303 @@
+body {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+}
+
+.back {
+    background-image: linear-gradient(210deg,
+            hsl(293, 100%, 63%),
+            hsl(264, 100%, 61%));
+    position: absolute;
+    width: 40%;
+    margin-left: -10%;
+    height: 800px;
+    border-radius: 0 0 50% 50%;
+}
+
+.box-1,
+.box-2 {
+    width: 50%;
+}
+
+.app {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    border: none;
+    width: 45%;
+    height: 620px;
+    margin-left: auto;
+    margin-right: 5%;
+    padding: 2%;
+    margin-top: 20%;
+    border-radius: 30px;
+    box-shadow: 15px 15px 40px hsl(270, 20%, 86%);
+}
+
+.border-head {
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    height: 35px;
+    width: 50%;
+    margin-top: -4%;
+    left: 25%;
+    border-radius: 0 0 20px 20px;
+}
+
+.app-head {
+    background-image: linear-gradient(240deg,
+            hsl(293, 100%, 63%),
+            hsl(264, 100%, 61%));
+    display: flex;
+    flex-direction: row;
+    padding: 15% 5% 1% 5%;
+    border-radius: 25px 25px 5px 5px;
+}
+
+svg {
+    margin-top: 10px;
+}
+
+.icon {
+    margin-left: auto;
+}
+
+.icon svg {
+    fill: hsl(276, 100%, 91%);
+    transform: rotate(90deg);
+}
+
+.pic-profile {
+    width: 14%;
+    margin: 0 5%;
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid hsl(270, 20%, 96%);
+}
+
+h4 {
+    color: hsl(276, 100%, 91%);
+    font-size: 13px;
+}
+
+h6 {
+    color: hsl(276, 100%, 81%);
+    font-size: 9px;
+}
+
+.app-body {
+    background-color: hsl(270, 20%, 96%);
+    padding: 3%;
+    overflow: scroll;
+    height: 450px;
+}
+
+.chat-1 {
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(276, 100%, 95%);
+    font-weight: 500;
+    margin-bottom: 3%;
+    width: 60%;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 2% 4%;
+}
+
+.chat-2 {
+    color: hsl(271, 15%, 43%);
+    background-color: white;
+    font-weight: 500;
+    margin-bottom: 3%;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 2% 4%;
+    width: 60%;
+    margin-left: auto;
+}
+
+.pic-dog {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 3%;
+}
+
+.pic-dog img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.btn1 {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-image: linear-gradient(90deg,
+            hsl(293, 100%, 63%),
+            hsl(264, 100%, 61%));
+    margin-bottom: 3%;
+    padding: 3% 4%;
+    width: 75%;
+    border-radius: 10px 10px 10px 5px;
+    font-size: 10px;
+    color: hsl(276, 100%, 91%);
+    text-align: left;
+    align-items: baseline;
+}
+
+.radio {
+    border: 1px solid hsl(289, 100%, 72%);
+    background-color: hsl(293, 100%, 63%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5%;
+    align-self: center;
+}
+
+span {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.app-footer {
+    background-color: hsl(270, 20%, 96%);
+    padding: 3%;
+    border-radius: 0 0 25px 25px;
+}
+
+.word {
+    display: flex;
+    flex-direction: row;
+}
+
+.message {
+    border-radius: 20px 0 0 20px;
+    padding: 2% 5%;
+    border: none;
+}
+
+.message::placeholder {
+    color: hsl(206, 6%, 79%);
+    font-size: 12px;
+}
+
+.next {
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    width: 30%;
+    padding: 2% 0;
+}
+
+.btn2 {
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    width: 70%;
+}
+
+.btn2 svg {
+    margin-top: -2%;
+}
+
+h1 {
+    color: hsl(271, 36%, 24%);
+    font-weight: 700;
+    margin-top: 49%;
+    margin-left: 10%;
+}
+
+p {
+    color: hsl(270, 7%, 64%);
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 64%;
+}
+
+@media (max-width: 550px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .box-1 {
+        width: 100%;
+        padding: 0 12%;
+    }
+
+    .box-2 {
+        width: 100%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .back {
+        background-image: linear-gradient(125deg,
+                hsl(293, 100%, 63%),
+                hsl(264, 100%, 61%));
+        height: 540px;
+        margin-left: -75%;
+        width: 110%;
+    }
+
+    .app {
+        margin: 0;
+        width: 100%;
+        margin-top: 25%;
+        overflow: hidden;
+        height: 560px;
+    }
+
+    .app-head {
+        padding-bottom: 2%;
+    }
+
+    h4 {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .app-body {
+        height: 420px;
+    }
+
+    .chat-1,
+    .chat-2 {
+        font-weight: 500;
+        width: 68%;
+    }
+
+    .pic-dog {
+        width: 73%;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+        margin-top: 20%;
+        margin-bottom: 8%;
+        font-size: 35px;
+    }
+
+    p {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
